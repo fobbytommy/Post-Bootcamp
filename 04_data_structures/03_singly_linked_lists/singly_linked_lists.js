@@ -6,8 +6,6 @@ function Node(element) {
 function SinglyLinkedList() {
 	this._length = 0;
 	this.head = null;
-
-
 }
 
 SinglyLinkedList.prototype.add = function(value) {
@@ -69,7 +67,7 @@ SinglyLinkedList.prototype.remove = function(position) {
     this._length--;
 
     return deletedNode;
-}
+};
 
 SinglyLinkedList.prototype.searchNodeAt = function(position) {
 	var currentNode = this.head;
@@ -96,7 +94,7 @@ SinglyLinkedList.prototype.display = function() {
 		console.log(currentNode.element);
 		currentNode = currentNode.next;
 	}
-}
+};
 
 var check = new SinglyLinkedList();
 
